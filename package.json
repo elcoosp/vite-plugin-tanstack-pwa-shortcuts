@@ -1,0 +1,57 @@
+{
+  "name": "vite-plugin-tanstack-pwa-shortcuts",
+  "version": "1.0.0",
+  "description": "Automatically generate PWA shortcuts from TanStack Router routes",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "pwa",
+    "shortcuts",
+    "tanstack-router",
+    "vite-plugin",
+    "manifest"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/vite-plugin-tanstack-pwa-shortcuts"
+  },
+  "homepage": "https://github.com/your-username/vite-plugin-tanstack-pwa-shortcuts#readme",
+  "bugs": "https://github.com/your-username/vite-plugin-tanstack-pwa-shortcuts/issues",
+  "peerDependencies": {
+    "vite": "^7.2.2"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.28.5",
+    "@babel/traverse": "^7.28.5",
+    "glob": "^12.0.0"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.28.5",
+    "@types/babel__traverse": "^7.28.0",
+    "@types/node": "^24.10.1",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^7.2.2"
+  }
+}
